@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head lang = "en">
+	<title>Newsy</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  	<link rel="stylesheet" type="text/css" href="news_home.css">
+  	<link rel="stylesheet" type="text/css" href="navbar.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="newsy_home.js"></script>
+  	
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	
+	<div class = "container">
+		<div class = "row">
+				<div class = "col-sm-offset-1 col-sm-2">
+					<form action ="filter.php" id = "form_filter" method = "POST">
+					
+					<input id = "bt_filter" type="submit" class="btn btn-primary btn-md" value = "Filter"></button>
+					<div class="radio">
+  						<label><input type="radio" name="rb_filter" value = "Newest">Newest</label>
+					</div>
+					<div class="radio">
+  						<label><input type="radio" name="rb_filter" value = "Oldest">Oldest</label>
+					</div>
+					<div class="radio">
+  						<label><input type="radio" name="rb_filter" value = "More Votes">More Votes</label>
+					</div>
+					<div class="radio">
+  						<label><input type="radio" name="rb_filter" value = "Less Votes">Less Votes</label>
+					</div>
+					</form>
+				</div>
+			<div class = "col-sm-9">
+				<ul style="list-style-type:none">
+  			<li class = "news_item" id = "item1">
+  				<a class = "headline_link" href = "news_item_1.html"><h3 id = "headline_1" class = "headline">Nikki Haley says new sanctions coming on Russia</h3></a>
+  				<p>Speaking on CBS News’s “Face the Nation” program, Haley said the sanctions are imminent, targetng Russian companies that have helped the government of Syrian President Bashar al-Assad make and deploy chemical weapons like those that spurred the United States...<a href = "news_item_1.html">Read More</a></p>
+
+  			</li>
+  			<li class = "news_item"  id = "item2">
+  				<a class = "headline_link" href = "news_item_2.html"><h3 id = "headline_2" class = "headline">Retired Bureaucrats Write To PM, Say Government Failed In "Darkest Hour"</h3></a>
+  				<p>Expressing concern over the "decline in the secular, democratic, and liberal values enshrined in our constitution", the scathing letter said: "The bestiality and the barbarity involved in the rape and murder of an eight year-old child shows the depths of depravity that we have sunk into...<a href = "news_item_2.html">Read More</a></p>
+  				
+  			</li>
+  			<li class = "news_item"  id = "item3">
+  				<a class = "headline_link" href = "news_item_3.html"><h3 id="headline_3" class = "headline">Chris Gayle Fifty Powers Kings XI Punjab To 197/7 vs CSK</h3></a>
+  				<p>Both KL Rahul (37) and Gayle stitched a 96-run first wicket partnership. Mayank Agarwal (30) and Karun Nair (29) played crucial knocks in the middle to ensure Punjab reached a decent total. Shardul Thakur (2/33) took two wickets while Harbhajan Singh, Shane Watson and Dwayne Bravo shared a...<a href = "news_item_3.html">Read More</a></p>
+  				
+  			</li>
+  			<li class = "news_item"  id = "item4">
+  				<a class= "headline_link" href = "news_item_4.html"><h3 id="headline_4" class = "headline">Pak Army Chief Calls For Dialogue With India To Resolve Disputes</h3></a>
+  				<p>The peaceful resolution of India-Pakistan disputes, including the core issue of Kashmir, can be found through comprehensive and meaningful dialogue, Pakistan's Army Chief General Qamar Javed Bajwa said....<a href = "news_item_4.html">Read More</a></p>
+  				
+  			</li>
+		</ul>
+			</div>
+		</div>
+	</div>
+
+	
+</body>

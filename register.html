@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+	<title>Register</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel = "stylesheet" href = "navbar.css">
+  	<link rel = "stylesheet" href = "register.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3"></div>
+			<div class = "col-sm-6">
+				<form action = "register.php" method = "POST">
+					<div class = "form-group">
+						<div>
+							<label for = "new_userid">User ID:</label>
+							<input class="form-control" type="text" name="new_uid" id = "new_userid">
+						</div>
+						<div>	
+							<label for = "new_password" >Password:</label>
+							<input class="form-control" type = "password" name = "new_pwd" id = "new_password">
+						</div>
+						<input id = "bt_register"  type = "submit" value = "Register">
+					</div>
+				</form>
+			</div>
+			<div class = "col-sm-3"></div>
+		</div>
+	</div>
+</body>
+</html>

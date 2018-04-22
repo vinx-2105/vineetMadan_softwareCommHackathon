@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head lang = "en">
+	<title>Second Item</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="news_item.css">
+  	<link rel="stylesheet" type="text/css" href="navbar.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="news_item.js"></script>
+</head>	
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3">
+				<form>
+					<div class = "form-group">
+						<label for = "txt_comment">Comment: </label>
+						<textarea class = "form-control" rows = "5"
+						id = "txt_comment"></textarea>
+					</div>
+					<button id = "bt_comment" type = "submit" class = "btn btn-default">Submit Comment</button>
+					<br>
+					<button id = "bt_upvote" type = "button" class ="btn btn-default btn-sm">
+						<span class = "glyphicon glyphicon-thumbs-up"></span>
+						Upvote  <span id = "bd_num_votes" class = "badge" value = 0>0</span>
+					</button>
+				</form>
+			</div>
+			<div  class="col-sm-9">
+				<div class = "news_panel">
+				<div class = "headline_div">
+					<h3 class = "headline">
+						Retired Bureaucrats Write To PM, Say Government Failed In "Darkest Hour"
+					</h3>
+				</div>
+				<div class = "news_full_div">
+					<p class = "news_full">
+						 As thousands of people hit the streets across the country to express outrage over the rapes in Kathua and Unnao, a group of 49 retired civil servants wrote an open letter to Prime Minister Narendra Modi, holding him responsible for what they called a "terrifying state of affairs".
+
+The letter criticized in strongest terms what they dubbed the government's failure "in performing the most basic of the responsibilities given to it by the people".
+
+Expressing concern over the "decline in the secular, democratic, and liberal values enshrined in our constitution", the scathing letter said: "The bestiality and the barbarity involved in the rape and murder of an eight year-old child shows the depths of depravity that we have sunk into. In post-Independence India, this is our darkest hour and we find the response of our Government, the leaders of our political parties inadequate and feeble".
+
+The letter did not spare the serving bureaucrats either, saying they "seem to have failed in their duty".
+
+The rape and murder of the 8-year-old in Jammu and Kashmir's Kathua shocked the country after a police chargesheet exposed the horrifying details of the case. Armed with candles, placards and enormous outrage, thousands of people came out on the streets this evening. Marches and sit in protests were held across metros and small towns -- Delhi, Mumbai, Bengaluru, Goa, Thiruvananthapuram, Ajmer, Bhopal and Chandigarh.
+
+The child, belonging to a nomadic community, was kidnapped on January 10. Over the next week, she was drugged, starved, repeatedly gangraped and then murdered. It has been alleged that the crime was committed to warn off the Muslim nomadic community away from the areas belonging to Hindus.
+
+There has been a groundswell of support for the accused - with even lawyers of the Jammu Bar Association opposing the chargesheet and going on an indefinite strike to show support. The strike entered its 12th day today. Two BJP members of Chief Minister Mehbooba Mufti's cabinet also showed support for the accused, but after PM Modi's speech condemning the attack, they were forced to resign.
+
+Last Sunday, a 16-year-old from Unnao, Uttar Pradesh, tried to commit suicide outside Chief Minster Yogi Adityanath's house. She claimed she had been raped by BJP lawmaker Kuldeep Singh Sengar and his brother and tried to end her life only after she failed to get justice. On Monday, her father, who had been mercilessly thrashed - allegedly by the lawmakers' brother -- for his refusal to withdraw the case, died.
+
+					</p>
+				</div>
+				</div>
+
+				<div class="comments_panel">
+					<h4 id = "comments_label" >Comments:</h4>
+					<h5 id = "no_comments">None so far!</h5>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+</body>

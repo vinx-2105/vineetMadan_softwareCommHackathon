@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head lang = "en">
+	<title>First Item</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="news_item.css">
+  	<link rel="stylesheet" type="text/css" href="navbar.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="news_item.js"></script>
+</head>	
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3">
+				<form>
+					<div class = "form-group">
+						<label for = "txt_comment">Comment: </label>
+						<textarea class = "form-control" rows = "5"
+						id = "txt_comment"></textarea>
+					</div>
+					<button id = "bt_comment" type = "submit" class = "btn btn-default">Submit Comment</button>
+					<br>
+					<button id = "bt_upvote" type = "button" class ="btn btn-default btn-sm">
+						<span class = "glyphicon glyphicon-thumbs-up"></span>
+						Upvote  <span id = "bd_num_votes" class = "badge" value = 0>0</span>
+					</button>
+				</form>
+			</div>
+			<div  class="col-sm-9">
+				<div class = "news_panel">
+				<div class = "headline_div">
+					<h3 class = "headline">
+						Nikki Haley says new sanctions coming on Russia
+					</h3>
+				</div>
+				<div class = "news_full_div">
+					<p class = "news_full">
+						Nikki Haley is right: She doesn’t get confused. In fact, she’s one of the shrewdest operators on the scene.
+
+The U.S. ambassador to the United Nations made headlines this week with her acerbic response to White House economic adviser Larry Kudlow’s insistence that she had been mistaken when she announced on television that the administration would impose harsher sanctions on Russia. And although some said Haley looked like a dupe, flattering coverage over the past few days suggests that she actually achieved a coup by positioning herself as a truth-teller apart from a cabal of liars.
+
+It goes without saying that the Haley-as-hero narrative demands some skepticism. Liberals may rejoice to see her display disdain for an administration they abhor, but they should remember that her agenda is, by and large, President Trump’s agenda — just as her record in South Carolina hewed close to the Republican party line. And Haley is hardly ready to break away from the Trumpian fold.
+
+But more interesting than whether Haley deserves the admiration she has earned from both sides of the aisle is how she has earned it. One strain in progressives’ praise of Haley is particularly revealing: They’re not heralding her merely as a rare example of a Cabinet member pushing back against the commander in chief. They’re heralding her as an example of a strong woman pushing back against an overbearing man. 
+
+When Michael Wolff smeared Haley in “Fire and Fury” by suggesting that she had had an affair with the president, she chose to take control of the controversy rather than stay silent. In an extended interview with Politico, Haley said, “I’ve noticed that if you speak your mind and you’re strong about it and you say what you believe, there is a small percentage of people that resent that and the way they deal with it is to try and throw arrows.”
+
+Haley appeared to have realized then that the answer was to shoot arrows back. The citizens who took up arms for her were lashing out against Wolff, but they were also lashing out against the idea that a woman’s reputation would suffer for the past sins of a powerful man. Haley has harnessed this energy before: A New York Magazine profile of her suggests that she disguises her manly ambition in the “genteel fashion” of the South, and offers as an example a tweet that she sent to Trump when he criticized her during the Republican presidential primary: “Bless your heart.”
+					</p>
+				</div>
+				</div>
+
+				<div class="comments_panel">
+					<h4 id = "comments_label" >Comments:</h4>
+					<h5 id = "no_comments">None so far!</h5>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+</body>

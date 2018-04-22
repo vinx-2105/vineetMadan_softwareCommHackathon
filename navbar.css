@@ -1,0 +1,44 @@
+.navbar {
+  background-color:white;
+  border-color: red;
+ }
+
+.navbar .navbar-brand:hover {
+    color: black;
+    text-decoration: none;
+}
+.navbar .navbar-brand:visited {
+    color: #ce4125;
+    text-decoration: none;
+}
+.navbar .navbar-brand:active {
+    color: #ce4125;
+    text-decoration: none;
+}
+.navbar .navbar-brand:link {
+    color: #ce4125;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav li a:link {
+    color: #ce4125;
+    text-decoration: none;
+}
+
+/* visited link */
+.navbar .navbar-nav li a:visited {
+    color: #ce4125;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.navbar .navbar-nav li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+.navbar .navbar-nav li a:active {
+    color: #ce4125;
+    text-decoration: none;
+}

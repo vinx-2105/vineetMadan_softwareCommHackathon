@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head lang = "en">
+	<title>Third Item</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="news_item.css">
+  	<link rel="stylesheet" type="text/css" href="navbar.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="news_item.js"></script>
+</head>	
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3">
+				<form>
+					<div class = "form-group">
+						<label for = "txt_comment">Comment: </label>
+						<textarea class = "form-control" rows = "5"
+						id = "txt_comment"></textarea>
+					</div>
+					<button id = "bt_comment" type = "submit" class = "btn btn-default">Submit Comment</button>
+					<br>
+					<button id = "bt_upvote" type = "button" class ="btn btn-default btn-sm">
+						<span class = "glyphicon glyphicon-thumbs-up"></span>
+						Upvote  <span id = "bd_num_votes" class = "badge" value = 0>0</span>
+					</button>
+				</form>
+			</div>
+			<div  class="col-sm-9">
+				<div class = "news_panel">
+				<div class = "headline_div">
+					<h3 class = "headline">
+						Chris Gayle Fifty Powers Kings XI Punjab To 197/7 vs CSK
+					</h3>
+				</div>
+				<div class = "news_full_div">
+					<p class = "news_full">
+						 MOHALI: Kings XI Punjab speedster Andrew Tye heaped praise on his side's explosive opener Chris Gayle, saying the West Indian played to perfection during his unbeaten knock of 104 against Sunrisers Hyderabad in their IPL match.
+ALSO READ: Sehwag saved the IPL by picking me, says Gayle
+Gayle's 63-ball unbeaten innings, which included 11 sixes, helped KXIP post a total of 193/3. In reply, the Sunrisers fell short by 15 runs.
+"Gayle played to perfection. He made sure that he stayed there till the end. You don't often see (spinner Rashid) Khan get hit for more than 25 in one over. To make Rashid concede that many runs (55 in four overs) was awesome," Tye said at the post-match news conference on Thursday.
+Tye said Gayle's shot selection and execution was spot-on.
+"I think he went about it very well. He knew that once he got through the powerplay, the spin would come on and then he got into the rhythm against the spin. I think he was very smart about it not to take too many risks against the pacers (early on)," he said.
+ALSO READ: Gayle ton brushes away SRH
+Asked what would have been his plans if you he was bowling to Gayle, Tye said that there is not much a bowler could do in such a situation and only hope that the batsman makes some mistake.
+"I guess you could try and get him off strike, but at the same time as pace bowlers you want to get him out because you know you have spin to come and he is lining up to attack them. It is different for every pitch you play on, tonight might have been the case of going short at him or could have been the case of just try him play some big shots and make him miss one," said the Australian.
+Tye, who claimed two wickets including the crucial wicket of Sunrisers skipper Kane Williamson when he was going great guns, said KXIP have got a good variety in their bowling attack.
+He said apart from Mohit Sharma, Barinder Sran, skipper Ravichandran Ashwin, Mujeeb-ur-Rahman and he himself, there are couple of others too who can bowl as well which makes the side a balanced unit. He said KXIP bowlers on their day can bowl a team out for less than 100.
+Tye said there can be "few selection headaches" for his team when Axar Patel is fit and available for selection.
+On the knuckle ball he used, Tye said that he used it quite often in Thursday's match.
+"I try and figure out what is working for me on the day. Today was knuckle ball and I stuck with that. Sometimes it works, sometimes you get hit into the crowd and you look like an idiot, but that's alright," he said.
+Meanwhile, Sunrisers bowler Siddharth Kaul too praised Gayle on the way he played.
+Asked what was the mindset of a bowler when a player like Gayle was in a destructive form, Kaul said, "The mindset is to get your execution right and bowl in the right areas. We were planning it that way only, but tough luck that his execution was better than ours and every shot he played was getting connected."
+"Gayle was executing smartly and he was challenging our main bowlers and he played really well," Kaul said.
+Kaul also said that losing opener Shikhar Dhawan, who had to retire hurt after taking a blow on elbow while batting, was a setback. Yet he felt that Sunrisers have batting depth and there were batsmen to make up for his loss.
+"In the end, we did our best and came close to the target losing by only 15 runs," he said.
+He said Sunrisers, who had won all their earlier three games, will bounce back after the defeat.
+"We will stay positive and try to do better in upcoming games," he said.
+
+					</p>
+				</div>
+				</div>
+
+				<div class="comments_panel">
+					<h4 id = "comments_label" >Comments:</h4>
+					<h5 id = "no_comments">None so far!</h5>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+</body>

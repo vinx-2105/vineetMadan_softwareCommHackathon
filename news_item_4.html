@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head lang = "en">
+	<title>Fourth Item</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="news_item.css">
+  	<link rel="stylesheet" type="text/css" href="navbar.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="news_item.js"></script>
+</head>	
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class = "container">
+			<div class = "navbar-header">
+				<a  class = "navbar-brand" href = "newsy_home.html">Newsy</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href = "newsy_home.html">Feed</a></li>
+				<li><a href = "#">Vineet Madan</a></li>
+				<li><a href = "login.html">Login</a></li>
+				<li><a href = "register.html">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3">
+				<form>
+					<div class = "form-group">
+						<label for = "txt_comment">Comment: </label>
+						<textarea class = "form-control" rows = "5"
+						id = "txt_comment"></textarea>
+					</div>
+					<button id = "bt_comment" type = "submit" class = "btn btn-default">Submit Comment</button>
+					<br>
+					<button id = "bt_upvote" type = "button" class ="btn btn-default btn-sm">
+						<span class = "glyphicon glyphicon-thumbs-up"></span>
+						Upvote  <span id = "bd_num_votes" class = "badge" value = 0>0</span>
+					</button>
+				</form>
+			</div>
+			<div  class="col-sm-9">
+				<div class = "news_panel">
+				<div class = "headline_div">
+					<h3 class = "headline">
+						Pak Army Chief Calls For Dialogue With India To Resolve Disputes
+					</h3>
+				</div>
+				<div class = "news_full_div">
+					<p class = "news_full">
+						  The peaceful resolution of India-Pakistan disputes, including the core issue of Kashmir, can be found through comprehensive and meaningful dialogue, Pakistan's Army Chief General Qamar Javed Bajwa said.
+
+General Bajwa's remarks came during his speech at the passing-out parade of cadets at the Pakistan Military Academy in Kakul yesterday, according to a statement by the Inter-Services Public Relations (ISPR), the media wing of the country's armed forces.
+
+"It is our sincere belief that the route to peaceful resolution of Pak-India disputes -- including the core issue of Kashmir -- runs through comprehensive and meaningful dialogue.
+
+"While such dialogue is no favour to any party, it remains the inevitable precursor to peace across the region. Pakistan remains committed to such a dialogue, but only on the basis of sovereign equality, dignity and honour," he said.
+
+Addressing the cadets, General Bajwa, 57, said Pakistan is a peace loving country and seeks harmonious and peaceful co-existence with all countries, especially its neighbours, according to the statement.
+
+"However, this desire for peace must not, in any sense, be construed as a sign of weakness. Our valiant Armed Forces are fully prepared to respond across the full spectrum of threat in a befitting manner," he added.
+
+The army chief also reaffirmed his country's "political and moral support" to the "basic right of self-determination" for the people of Jammu and Kashmir.
+
+He said Pakistan has done its part to cleanse itself of the scourge of terrorism and extremism without any distinction and the efforts have started to bear results.
+
+"We are committed to continue these efforts, not out of any compulsion, but to make Pakistan a safe, prosperous and progressive country," he said.
+
+General Bajwa also said that a "hybrid war" had been imposed on Pakistan to internally weaken it.
+
+Stressing that Pakistan has totally rejected extremism and terrorism, he said, "I would like to reiterate here that the nation and its Armed Forces are totally united and focused towards our primary objective, that is, eradication and elimination of terrorism."
+
+					</p>
+				</div>
+				</div>
+
+				<div class="comments_panel">
+					<h4 id = "comments_label" >Comments:</h4>
+					<h5 id = "no_comments">None so far!</h5>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+</body>
